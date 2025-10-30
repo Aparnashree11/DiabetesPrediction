@@ -1,0 +1,29 @@
+# gitignore for beam_lab
+
+# Ignore the entire models directory (all artifacts, models, pickles)
+models/**
+/models/
+!models
+
+
+# Ignore any subdirectories inside output/batch_predictions
+# This keeps files directly under output/batch_predictions (like predictions.jsonl)
+output/batch_predictions/*/
+/output/batch_predictions/*/
+
+# Common Python and development ignores
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments and environment files
+venv/
+.venv/
+env/
+.env
+
+# VS Code
+.vscode/
