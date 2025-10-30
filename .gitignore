@@ -1,9 +1,7 @@
-# gitignore for beam_lab
-
 # Ignore the entire models directory (all artifacts, models, pickles)
 models/**
 /models/
-!models
+!models/.gitkeep
 
 
 # Ignore any subdirectories inside output/batch_predictions
